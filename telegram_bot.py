@@ -6,7 +6,7 @@ import openai
 import os
 
 # Give OpenAI Key
-openai.api_key ="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" or os.environ.get("OPENAI_API_KEY")
+openai.api_key ="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" or os.environ.get("OPENAI_API_KEY")
 
 app = Flask(__name__)
 # Get BOT Token from telegram

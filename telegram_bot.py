@@ -6,11 +6,11 @@ import openai
 import os
 
 # Give OpenAI Key
-openai.api_key ="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" or os.environ.get("OPENAI_API_KEY")
+openai.api_key =  os.environ.get("OPENAI_API_KEY") or "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"
 
 app = Flask(__name__)
 # Get BOT Token from telegram
-token ="6880152084:AAHJoT5_V88XGi69QqI8RlPGo0eq6iXT47U" or os.environ.get("TELEGRAM_BOT_TOKEN")
+token = os.environ.get("TELEGRAM_BOT_TOKEN") or "6880152084:AAHJoT5_V88XGi69QqI8RlPGo0eq6iXT47U"
 
 
 def generate_answer(question):
